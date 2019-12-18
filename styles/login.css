@@ -1,0 +1,173 @@
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-form {
+	min-width: 300px;
+	border: 1px solid #ccc;
+	padding: 2rem;
+}
+
+.login-form h1,
+.login-form p {
+	text-align: center;
+}
+
+.login-form p {
+	color: #666;
+}
+
+.login-form form input {
+	box-shadow: none;
+}
+
+.input {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.login-email,
+.login-password {
+	display: flex;
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+.input-grup-text .fa {
+	position: absolute;
+	right: 15px;
+	top: 7px;
+	color: rgb(24, 144, 255);
+	opacity: 0.8;
+}
+
+.login-rememberme-btn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-google,
+.login-facebook {
+	text-align: center;
+}
+
+.login-facebook {
+	padding: 1rem 0;
+}
+
+.forgot-password-register {
+	display: flex;
+	justify-content: space-between;
+}
+
+.forgot-password,
+.register {
+	color: #666;
+	font-size: 14px;
+}
+
+.register {
+	font-size: 16px;
+}
+
+.hover-blue:hover {
+	color: #007bff;
+	text-decoration: underline;
+}
+
+.checkbox {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn-login-google {
+	background: #dc3545;
+}
+
+.btn-login-facebook {
+	background: #4285f4;
+}
+
+.btn-block {
+	text-transform: none;
+	width: 100%;
+	padding: 0.5rem 0;
+}
+
+.checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+}
+
+.checkbox:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+	background-color: #2196f3;
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.checkbox .checkmark:after {
+	left: 7px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 589px) {
+	.login {
+		padding-top: 3rem;
+	}
+}
+
+@media only screen and (max-width: 513px) {
+	.login {
+		padding-top: 5rem;
+	}
+
+	.login-form {
+		padding: 0;
+		border: none;
+	}
+
+	.login-form form input {
+		min-width: 0;
+		width: 100%;
+	}
+}
